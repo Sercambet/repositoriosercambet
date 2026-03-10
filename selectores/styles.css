@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maintitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    color: darkblue;
+}
+
+.container {
+    background-color: lightgreen;
+
+}
+
+
+.estilo {
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+li {
+    list-style: none;
+}
+
+
+.card_brasil{
+    background-color: blue;
+
+}
+
+.card_argentino{
+    background-color: red;
+}
+
+.card_sarten{
+    background-color: green;
+}
+
