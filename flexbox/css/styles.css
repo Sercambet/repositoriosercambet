@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-pic{
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+    
+
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+.menu_list{
+    background-color: aqua;
+    padding: 10px;
+    displayu: flex;
+    gap: 30px;
+}
+
+h1{
+    text-align: center ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
