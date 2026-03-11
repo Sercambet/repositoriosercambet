@@ -9,7 +9,8 @@
     margin: 0 auto;
     height: 40rem;
     background-color: antiquewhite;
-
+    gap: 10px;
+    
     /* FLEX */
     display: flex;
     flex-direction: column;
