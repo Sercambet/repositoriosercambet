@@ -40,17 +40,6 @@ h1{
     align-items: center;
     background-color: aqua;
 }
-.container{
-    width: 800px;
-    height: 600px;
-    display: flex;
-    background-color: rosybrown;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: end;
-    flex-direction: column-reverse;
-}
 
 
 .box{
