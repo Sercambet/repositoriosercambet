@@ -111,8 +111,8 @@ footer{
 .cajas{
     display: flex;
     justify-content: space-between;
-    margin-top:auto;
     flex-wrap: wrap;
+    margin-top: 50px;
     gap: 20px;
     border: 5px, solid, black;
 
@@ -120,7 +120,108 @@ footer{
 
 .cajas > p{
     flex-wrap: wrap;
-    gap: 20px;
-    border: 5px, solid, black;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
+.boxmodel{
+      flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: 300px;
+    text-align: justify;
+}
+
+.boxmodeltitulo{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    font-weight: bold;
+}
+
+
+.displaytitulo{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.display{
+          flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: 300px;
+    text-align: justify;
+}
+
+.flexboxtitulo{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.flexboxnav{
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: 300px;
+    text-align: justify;
+}
+
+.medidasnav{
+        flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: 300px;
+    text-align: justify;
+}
+
+.medidastitulo{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    font-weight: bold;
+}
+
+
+.propiedadesnav{
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: 300px;
+    text-align: justify;
+    
+}
+
+.propiedadestitulo{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    font-weight: bold;
 }
