@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: aqua;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+footer{
+    display: flex;
+    margin-top: auto;
+    padding: 20px;
+    color: black;
+    text-align:center;
+    margin-top:auto;
+    font-size:2rem;
+
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
