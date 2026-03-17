@@ -20,3 +20,45 @@ p{
 
     
 }
+
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4F9E42;
+    padding: 20px;
+    font-size: 20px;
+    font-style: none;
+    font-display: none;
+    height: 200px;
+
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+a{
+    font-size: 20px;
+      display: flex;
+    color: black;
+    text-align: center;
+}
+
+.logo{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    height: 3px;
+    margin: 20px;
+    justify-content: center;
+    
+}

@@ -13,3 +13,65 @@ html{
 .rem{
     font-size: 5.6rem;
 }
+
+
+body{
+        margin: 0px;
+        box-sizing: border-box;
+}
+
+p{
+    background-color: blue;
+    border: 2px solid black;
+    padding: 20px 100px;
+    margin: 10px 100px;
+    width: 200px;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+
+
+    
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4F9E42;
+    padding: 20px;
+    font-size: 20px;
+    font-style: none;
+    font-display: none;
+    height: 200px;
+
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+a{
+    font-size: 20px;
+      display: flex;
+    color: black;
+    text-align: center;
+}
+
+.logo{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    height: 3px;
+    margin: 20px;
+    justify-content: center;
+    
+}

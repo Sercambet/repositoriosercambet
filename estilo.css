@@ -10,9 +10,7 @@ html{
     font-family: Helvetica, sans-serif;
 }
 
-a{
-    color: black;
-}
+
 
 header > nav{
     display: flex;
@@ -49,6 +47,9 @@ body{
 
 a{
     font-size: 20px;
+    display: flex;
+    color: black;
+    text-align: center;
 }
 
 footer{
@@ -122,6 +123,7 @@ footer{
 
 }
 
+
 .cajas > p{
     flex-wrap: wrap;
     gap: 10px;
@@ -133,7 +135,7 @@ footer{
 }
 
 .boxmodel{
-      flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 10px;
     border: 2px solid black;
     border-radius: 20px;
@@ -147,7 +149,7 @@ footer{
 .boxmodeltitulo{
     display: flex;
     justify-content: center;
-    font-style:italic;
+    font-style: bold;
     font-weight: bold;
 }
 
