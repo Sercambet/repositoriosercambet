@@ -114,7 +114,7 @@ footer{
 }
 
 /* ConfiguraciÓn del logo que es un librito */
-Todos los derechos reservados ©
+
 div{
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ div{
 con el titulo de la pagina */
 
 .headermenu{
-    height: 100px;
+    height: 150px;
 }
 
 /* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
@@ -141,7 +141,7 @@ main{
 
 p{
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
 }
 
