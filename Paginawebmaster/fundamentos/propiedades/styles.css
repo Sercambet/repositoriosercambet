@@ -6,7 +6,7 @@
 
 h1{
     text-align: center;
-    color: burlywood;
+    color: black;
     font-size: 80px;
     font-family: Barrio;
     font-weight: 100;
@@ -19,26 +19,27 @@ body{
 }
 
 
-div{
+.descripcion{
     display: flex;
-    margin-top: 0px;
+    margin-top: 20px;
     justify-content: center;
+
 }
 
-p {
-    color: whitesmoke;
-    font-size: 50px;
-    font-family: Barrio;
+.textocaja {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight:100;
     font-style: italic;
     text-align: justify;
     text-shadow: 3px 10px 10px black;
     line-height:60px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
      display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #C1F6D4;
     border: 2px solid black;
     width: 1000px;
     border: 5px solid black;
@@ -50,20 +51,26 @@ p {
 
 h2{
     text-align: center;
-    color: burlywood;
+    color: black;
     font-size: 50px;
     font-family: Barrio;
     font-weight: 100;
     text-shadow: 0px 5px 10px black;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 
 }
+
+
 
 html{
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
+ /* Configuración tamaño + tipo de letra en index.html */
 }
+
+
 
 header > nav{
     display: flex;
@@ -76,7 +83,67 @@ header > nav{
     font-display: none;
     height: 200px;
 
+/* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
+
 }
+
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    font-size: 30px;
+    margin-top: 60px;
+/* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #C1F6D4;
+/* Seteo de body y su tamaño para empatar con el footer utilizando min-height */
+    
+
+}
+
+.enlaceheader{
+    color: black;
+}
+
+/* Clase independiente que le puse a los links del header
+para mantener el color negro en el menu, de lo contrario, 
+se vería azul como en la clase "a{". */
+
+
+a{
+    font-size: 20px;
+    display: flex;
+    color: black;
+    text-align: center;
+}
+
+/* Configuración de los enlaces de la caja del menú */
+
+
+
+
+footer{
+    display: flex;
+    margin-top: auto;
+    padding: 20px;
+    color: black;
+    text-align:center;
+    margin-top:auto; 
+    font-size:2rem;
+    background-color: #4F9E42;
+    height: 68px;
+
+
+}
+
+/* Ajustes de footer para empatar estéticamente con el header */
 
 .menu_list{
     display: flex;
@@ -84,12 +151,7 @@ header > nav{
     gap: 20px;
 }
 
-a{
-    font-size: 20px;
-      display: flex;
-    color: black;
-    text-align: center;
-}
+/* Espacio entre enlaces del menú */
 
 .logo{
     font-family: Helvetica, sans-serif;
@@ -101,3 +163,60 @@ a{
     justify-content: center;
     
 }
+
+/* ConfiguraciÓn del titulo de la pagina */
+
+.libro{
+    display:flex;
+    align-items: end;
+    justify-content: center;
+    height: 80px;
+
+}
+
+/* ConfiguraciÓn del logo que es un librito */
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+/* Div muy generico, pero me sirivÓ para alinear el logo
+con el titulo de la pagina */
+
+.headermenu{
+    height: 150px;
+}
+
+/* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
+
+main{
+    display: flex;
+    justify-content: start;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+/* Por inercia lo utilice para cuadrar las cajas */
+
+p{
+    font-family: Helvetica;
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
+}
+
+/* Aqui aseguré que el texto se viera uniforme */
+
+section{
+    display: flex;
+}
+
+/* Por si las moscas */
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
