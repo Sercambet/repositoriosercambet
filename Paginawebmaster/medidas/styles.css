@@ -118,7 +118,7 @@ div{
 con el titulo de la pagina */
 
 .headermenu{
-    height: 150px;
+    height: 110px;
 }
 
 /* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
@@ -150,6 +150,7 @@ section{
 footer{
     display: flex;
     justify-content: center;
+    height: 28px;
 }
 
 /* Necesario para que el texto se viera centrado en el footer */
@@ -180,7 +181,7 @@ body{
 }
 
 .pixeles{
-    background-color: blue;
+    background-color: #C1F6D4;
     border: 2px solid black;
     padding: 20px 100px;
     margin: 10px 100px;
@@ -189,21 +190,20 @@ body{
     border: 5px solid black;
     border-radius: 20px;
     text-align: center;
+    font-size:30px;
     
 }
 
 .rem{
-        background-color: blue;
-    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: #C1F6D4;
     padding: 20px 100px;
     margin: 10px 100px;
-    margin-left: 300px;
     width: 1000px;
-    border: 5px solid black;
-    border-radius: 20px;
-    text-align: center;
-    height: 300px;
-    font-size: 38px;
+    text-align: justify;
+    height: 200px;
+    font-size: 30px;
 
 }
 
@@ -250,3 +250,23 @@ a{
 }
 
 
+.ejemplo{
+    display:flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 600px;
+    height: 200px;
+    
+}
+
+.cajaimagen{
+    display:flex;
+    border: 5px solid black ;
+    border-radius: 20px;
+    width: 1200px;
+    justify-content: center;
+    align-items: baseline;
+    height: 250px;
+    margin-left: 300px;
+
+}
