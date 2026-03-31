@@ -32,21 +32,39 @@
 <div class="inicio">
 
     <div class="header">
-            <h1>Tucarro.com.co</h1>
-    <div class="logo"><img class="logotucarro" src="./tucarro.png" alt=""></div>
-
+        <h1>Tucarro.com.co</h1>
+        <div class="logo"><img class="logotucarro" src="./tucarro.png" alt="Logo Tucarro"></div>
     </div>
+
+    <p style="text-align:center; max-width:800px; margin: 20px auto; font-size:18px; padding: 0 20px;">
+        Un <strong>componente web</strong> es una pieza reutilizable de interfaz construida con HTML y CSS.
+        A continuación ves un ejemplo real: una galería de imágenes de vehículos, similar a la que usaría
+        un portal como Tucarro. Cada tarjeta de imagen es un componente independiente con su contenedor
+        <code>.img</code>, su imagen <code>&lt;img&gt;</code> y efectos de hover aplicados por CSS.
+        Así se construyen las interfaces que ves en internet todos los días.
+    </p>
 
     <div class="container">
-    <div class="img"><img class="fotomenu" src="./snapshot.jpeg" alt=""></div>
-    <div class="img"><img class="fotomenu" src="./2.jpeg" alt=""></div>
-    <div class="img"><img class="fotomenu" src="./3.jpg" alt=""></div>
-    <div class="img"><img class="fotomenu" src="./4.jpg" alt=""></div>
-    <div class="img"><img class="fotomenu" src="./5.jpg" alt=""></div>
-    <div class="img"><img class="fotomenu" src="./6.jpg" alt=""></div>
-
+        <div class="img"><img class="fotomenu" src="./snapshot.jpeg" alt="Vehículo en venta 1"></div>
+        <div class="img"><img class="fotomenu" src="./2.jpeg" alt="Vehículo en venta 2"></div>
+        <div class="img"><img class="fotomenu" src="./3.jpg" alt="Vehículo en venta 3"></div>
+        <div class="img"><img class="fotomenu" src="./4.jpg" alt="Vehículo en venta 4"></div>
+        <div class="img"><img class="fotomenu" src="./5.jpg" alt="Vehículo en venta 5"></div>
+        <div class="img"><img class="fotomenu" src="./6.jpg" alt="Vehículo en venta 6"></div>
     </div>
 
+</div>
+
+<div style="max-width:800px; margin: 30px auto; padding: 20px; background-color:#fff; border: 2px solid black; border-radius: 16px;">
+    <h2 style="text-align:center; font-family:Helvetica,sans-serif; margin-bottom:12px;">¿Cómo se construye este componente?</h2>
+    <p style="font-family:Helvetica,sans-serif; font-size:17px; line-height:1.7;">
+        Cada imagen está envuelta en un <code>&lt;div class="img"&gt;</code> que actúa como contenedor con
+        <code>overflow: hidden</code> para recortar la imagen. La imagen dentro tiene <code>object-fit: cover</code>
+        para que siempre llene el espacio sin deformarse. El efecto de escala al pasar el cursor se logra con
+        <code>transform: scale(1.1)</code> combinado con <code>transition</code> en el CSS. El conjunto de tarjetas
+        usa <strong>Flexbox</strong> con <code>flex-wrap: wrap</code> para distribuirse automáticamente en filas
+        según el ancho disponible.
+    </p>
 </div>
     
     <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</p>

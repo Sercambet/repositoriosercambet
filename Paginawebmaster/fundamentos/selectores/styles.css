@@ -30,27 +30,36 @@ li {
 
 .card_brasil{
     background-color: blue;
-    width: 1500px;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
-    margin-left: 200px;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    padding: 15px;
+    border-radius: 10px;
 
 }
 
 .card_argentino{
     background-color: red;
-    width: 1500px;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
-    margin-left: 200px;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .card_sarten{
     background-color: green;
-        width: 1500px;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
-    margin-left: 200px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 
@@ -85,23 +94,24 @@ div{
 
 p {
     color: whitesmoke;
-    font-size: 50px;
+    font-size: clamp(22px, 3vw, 40px);
     font-family: Barrio;
     font-weight:100;
     font-style: italic;
     text-align: justify;
     text-shadow: 3px 10px 10px black;
-    line-height:60px;
-    letter-spacing: 5px;
-     display: flex;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: blue;
-    border: 2px solid black;
-    width: 1000px;
     border: 5px solid black;
+    width: 90%;
+    max-width: 1000px;
     border-radius: 20px;
-    
+    padding: 20px;
+
     /* Aqui es donde definí los colores de la pagina web y sus respectivos estilos, como el tamaño de letra, la fuente, el peso de la letra, el estilo de la letra, la alineación del texto y el margen. */
 
 }
@@ -141,9 +151,9 @@ header > nav{
     background-color: #4F9E42;
     padding: 20px;
     font-size: 20px;
-    font-style: none;
-    font-display: none;
-    height: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
 
 /* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
 
@@ -153,11 +163,11 @@ h1{
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 0;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
 /* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-    
+
 }
 
 body{
@@ -250,3 +260,112 @@ con el titulo de la pagina */
 }
 
 /* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    header > nav {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    header > nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .menu_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .libro {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .estilo {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .maintitle {
+        font-size: 24px;
+    }
+
+    .headermenu {
+        height: auto;
+    }
+
+    footer {
+        font-size: 1.4rem;
+        height: auto;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > nav {
+        padding: 10px 8px;
+    }
+
+    .menu_list {
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

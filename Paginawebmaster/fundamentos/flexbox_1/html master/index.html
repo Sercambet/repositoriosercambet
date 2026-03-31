@@ -28,32 +28,46 @@
         </ul>
     </nav>
     
-    <h1>Home</h1>
-<div class="container">
+    <h1>Flexbox en Acción</h1>
 
+    <p style="text-align:center; color:white; font-family:Helvetica,sans-serif; font-size:18px;
+              max-width:700px; margin: 15px auto 25px; padding: 0 20px; line-height:1.7;">
+        Los cuadrados negros de abajo son <strong>flex items</strong> dentro de un contenedor con
+        <code style="background:#333; padding:2px 6px; border-radius:4px;">display: flex</code> y
+        <code style="background:#333; padding:2px 6px; border-radius:4px;">flex-wrap: wrap</code>.
+        Observa cómo se distribuyen automáticamente en filas según el ancho disponible. Prueba a
+        cambiar el tamaño de la ventana para ver el comportamiento responsivo.
+    </p>
 
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-
-    </div>  
+    <p style="text-align:center; color:#ccc; font-family:Helvetica,sans-serif; font-size:15px;
+              max-width:600px; margin: 20px auto; padding: 0 20px;">
+        Cada caja mide <strong>20x20px</strong>. El contenedor usa <code style="background:#333;
+        padding:2px 6px; border-radius:4px;">gap: 20px</code> para el espaciado y
+        <code style="background:#333; padding:2px 6px; border-radius:4px;">justify-content: center</code>
+        para centrar el grupo de cajas horizontalmente.
+    </p>
 
 </body>

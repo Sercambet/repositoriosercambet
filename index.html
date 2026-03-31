@@ -17,16 +17,29 @@
                 <span class="logo">Codigocraft.com</span>
             </div>
 
-            <ul class="menu_list">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu_list" id="menu_list">
                 <li><a class="enlaceheader" href="/index.html">Inicio</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/box_model/index.html">Box Model</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/flexbox_2/index.html">Flexbox</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/medidas/index.html">Medidas</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a></li>
-                </li>
+                <li><button id="boton">Iniciar Sesión</button></li>
+
+                <!-- The Modal -->
+                <div id="modelo" class="mimodelo">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -36,14 +49,17 @@
     <main>
 
         <section>
-            <p>Bienvenido a la guía de código HTML y CSS más grande y completa de internet. Aquí encontrarás
-                conocimiento de el mundo del desarollo web, donde abarcaremos toda una guía completa de fundamentos
-                teóricos que funcionarán para crear tu página web perfecta. Ten en cuenta que cada página está escrita
-                por expertos con cientos de horas de conocimiento, personas que trabajan para Google, Oracle, Adobe,
-                entre otros. Te invitamos a ir por un café, relajarte y disfrutar de esta biblioteca de conocimiento
-                inspirada en la construcción modular al estilo Minecraft, pero de desarrolladores.
+            <p>Bienvenido a <strong>Codigocraft.com</strong>, la guía de HTML y CSS diseñada para llevarte de cero a
+                desarrollador web con confianza. Aquí encontrarás cada concepto explicado con claridad, ejemplos
+                visuales y un lenguaje directo, sin rodeos. Cada módulo cubre un pilar fundamental del desarrollo
+                front-end: desde cómo se estructura una página hasta cómo darle estilo, animación y responsive design.
+                Tómate tu tiempo, explora en orden o salta al tema que necesites. Esta biblioteca está hecha para ti.
             </p>
-
+            <p>
+                ¿No sabes por dónde empezar? Te recomendamos este orden: <strong>Box Model → Selectores → Propiedades
+                → Medidas → Flexbox → Componentes</strong>. Cada sección construye sobre la anterior y al final tendrás
+                las bases sólidas para construir cualquier interfaz web.
+            </p>
         </section>
 
     </main>
@@ -51,89 +67,54 @@
     <nav class="cajas">
 
         <nav class="boxmodel">
-
-
-            <p class="boxmodeltitulo">
             <ul>
-                <li><a class href="./Paginawebmaster/fundamentos/box_model/index.html">Box Model</a></li>
+                <li><a href="./Paginawebmaster/fundamentos/box_model/index.html">📦 Box Model</a></li>
             </ul>
-            </p>
-
-            <p>En esta sección aprenderás a modelar cajas de .CSS para lograr diseños como el que estás viendo, para
-                dividir, agrupar y organizar conjuntos de información tales como texto, imagenes, enlaces entre otros.
-            </p>
+            <p>Todo elemento HTML vive dentro de una caja invisible. Aprende a controlar su <strong>contenido,
+                padding, borde y margen</strong> para construir layouts precisos y ordenados.</p>
         </nav>
 
         <nav class="display">
-            <p class="displaytitulo">
             <ul>
-                <li><a class href="./Paginawebmaster/componentes/index.html">Componentes</a>
+                <li><a href="./Paginawebmaster/componentes/index.html">🧩 Componentes</a></li>
             </ul>
-            </p>
-
-            <p class="displaytexto">
-                Aprende a controlar componentes, encapsular elementos, y utilizar tecnologías de lenguaje de
-                codificación tales como HTML y CSS para la creación de menús.
-            </p>
+            <p>Los componentes son bloques reutilizables de HTML y CSS. Desde una tarjeta hasta un menú de navegación
+                completo: aprende a encapsular y estructurar interfaces modulares.</p>
         </nav>
 
         <nav class="flexboxnav">
-            <p class="flexboxtitulo">
             <ul>
-                <li><a class href="./Paginawebmaster/fundamentos/flexbox_2/index.html">Flexbox</a>
+                <li><a href="./Paginawebmaster/fundamentos/flexbox_2/index.html">↔ Flexbox</a></li>
             </ul>
-            </p>
-
-            <p>
-                Flexible Box Layout es propiedad del modelado de CSS que permite ajustar los items en una sola
-                dirección, bien sea en row o column según corresponda. Aprende como utilizar esta gran herramienta en
-                esta sección.
-            </p>
-
+            <p><strong>Flexible Box Layout</strong> es el sistema de distribución de CSS más poderoso para organizar
+                elementos en fila o columna. Domina <code>justify-content</code>, <code>align-items</code> y
+                <code>flex-wrap</code> en esta sección.</p>
         </nav>
 
         <nav class="medidasnav">
-            <p class="medidastitulo">
             <ul>
-                <li><a class href="./Paginawebmaster/medidas/index.html">Medidas</a>
+                <li><a href="./Paginawebmaster/medidas/index.html">📐 Medidas</a></li>
             </ul>
-            </p>
-            <p>
-                Te vas a dar cuenta que la medida "px" es solo la punta del iceberg cuando nos referimos a medir
-                tamaños. Encuentra y conoce las diferentes dimesiones que se utilizan al codificar CSS.
-
-            </p>
+            <p>Los <strong>px</strong> son solo el comienzo. Descubre cómo funcionan <strong>rem, em, %, vh y
+                vw</strong>, y cuándo usar cada unidad para que tu diseño sea realmente adaptable a cualquier
+                pantalla.</p>
         </nav>
 
         <nav class="propiedadesnav">
-            <p class="propiedadestitulo">
             <ul>
-                <li><a href="./Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a></li>
+                <li><a href="./Paginawebmaster/fundamentos/propiedades/index.html">🎨 Propiedades</a></li>
             </ul>
-            </p>
-            <p>
-                CSS posee multiples funciones para darle personalidad a tu página web, dentro de ellas están los
-                colores, el tamaño de letra, margenes, fondos de color, entre otros. Aprende toda la nomenclatura de
-                este lenguaje que le da vida a tu sitio en internet.
-            </p>
-
+            <p>CSS tiene cientos de propiedades que controlan colores, tipografía, sombras, fondos, bordes y más.
+                Aprende las más importantes y cómo combinarlas para crear páginas con identidad visual sólida.</p>
         </nav>
 
         <nav class="selectoresnav">
-            <p class="selectorestitulo">
             <ul>
-                <li>
-                    <a href="./Paginawebmaster/fundamentos/selectores/index.html">Selectores</a>
-                </li>
+                <li><a href="./Paginawebmaster/fundamentos/selectores/index.html">🎯 Selectores</a></li>
             </ul>
-
-            </p>
-            <p>
-                ¿Te has preguntado como es posible personalizar uno a uno cada texto, imagen, fondo y contenido que ves
-                al detalle? Bueno, los selectores permiten identificar cada pixel que vas a modificar en tu código CSS y
-                HTML, descubre como hacerlo.
-            </p>
-
+            <p>Los selectores son la llave de CSS: te permiten apuntar exactamente al elemento que quieres estilizar.
+                Aprende selectores de <strong>etiqueta, clase, ID y combinadores</strong> para tener control total
+                sobre tu diseño.</p>
         </nav>
 
     </nav>
@@ -143,6 +124,20 @@
     <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</p>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menuList = document.getElementById('menu_list');
+        hamburger.addEventListener('click', () => {
+            menuList.classList.toggle('menu-open');
+            hamburger.classList.toggle('active');
+        });
+        menuList.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuList.classList.remove('menu-open');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

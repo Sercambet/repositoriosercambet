@@ -32,11 +32,26 @@
         </nav>
     </header>
 
-        <h1 class="maintitle">Selectores y etiquetas</h1>
+        <h1 class="maintitle">Selectores CSS</h1>
 
+    <div class="estilo">
+        <p>Un <strong>selector CSS</strong> es la parte de una regla que indica <em>a qué elemento HTML se le
+            aplicará el estilo</em>. Sin selectores, no hay forma de decirle al navegador qué parte de la página
+            debe cambiar de color, tamaño o posición.</p>
+        <p>Los tres tipos fundamentales son:</p>
+        <ul>
+            <li><strong>Selector de etiqueta:</strong> apunta a todas las etiquetas de ese tipo. Ej: <code>p { color: red; }</code> afecta todos los párrafos.</li>
+            <li><strong>Selector de clase (<code>.nombre</code>):</strong> apunta a elementos con ese atributo <code>class</code>. Es el más usado en proyectos reales.</li>
+            <li><strong>Selector de ID (<code>#nombre</code>):</strong> apunta a un único elemento con ese <code>id</code>. Se usa para elementos únicos en la página.</li>
+        </ul>
+        <p>En los ejemplos a continuación, cada tarjeta de receta tiene una clase diferente
+            (<code>.card_brasil</code>, <code>.card_argentino</code>, <code>.card_sarten</code>), lo que permite
+            aplicarle un color de fondo distinto a cada una sin tocar las demás. Así funcionan los selectores de
+            clase en la práctica.</p>
+    </div>
 
     <section class="container">
-    
+
         <div class="estilo card_brasil">
                 <h2>Como asar carne al estilo brasileño</h2>
             <ul>

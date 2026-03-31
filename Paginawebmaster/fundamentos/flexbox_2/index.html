@@ -33,13 +33,35 @@
     <div class="div1">
         <h1>Flexbox</h1>
 
-    <div class="div2"></div>
-        <p class="pemain">Esta layout de CSS permite que nuestro diseño sea flexible, compacto y práctico para que se mantenga en linea con todas las columnas, contenedores, cajas, etc. Sus mayores y mejores atributos son "justify-content", "flex-wrap" "content-align" entre otros. Flexbox permite simplificar multiples y complejos diseños para asegurar que la página web sea navegable y coherente visualmente. </p>
+        <div class="div2"></div>
 
-    
+        <p class="pemain"><strong>Flexbox</strong> (Flexible Box Layout) es un modelo de diseño CSS que organiza
+            elementos en una sola dimensión: fila (<code>row</code>) o columna (<code>column</code>). Al declarar
+            <code>display: flex</code> en un contenedor, todos sus hijos directos se convierten en
+            <em>flex items</em> y pueden distribuirse, alinearse y redimensionarse de forma automática.</p>
 
+        <p class="pemain"><strong>justify-content</strong> controla cómo se distribuyen los elementos a lo largo
+            del eje principal. Sus valores más usados son: <code>flex-start</code> (agrupa al inicio),
+            <code>flex-end</code> (agrupa al final), <code>center</code> (centra todo), <code>space-between</code>
+            (espacio igual entre elementos) y <code>space-around</code> (espacio igual alrededor de cada uno).</p>
 
- <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</p>
+        <p class="pemain"><strong>align-items</strong> controla la alineación en el eje secundario (perpendicular).
+            Con <code>align-items: center</code> puedes centrar verticalmente cualquier contenido sin trucos ni
+            hacks, algo que antes de Flexbox era muy complicado de lograr.</p>
+
+        <p class="pemain"><strong>flex-wrap: wrap</strong> permite que los elementos se distribuyan en múltiples
+            filas cuando no caben en una sola. Sin esta propiedad, Flexbox forzaría todos los elementos a caber en
+            una línea, comprimiéndolos. Con <code>gap</code> puedes controlar el espacio entre filas y columnas
+            a la vez de forma limpia.</p>
+
+        <p class="pemain"><strong>flex-direction: column</strong> cambia el eje principal a vertical. Esto es
+            muy útil para construir layouts de página completos donde el header, el main y el footer se apilan
+            verticalmente. Combinado con <code>min-height: 100vh</code> y <code>margin-top: auto</code> en el
+            footer, logras que el pie de página siempre quede al fondo.</p>
+
+    </div>
+
+    <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©
     </footer>
 
 

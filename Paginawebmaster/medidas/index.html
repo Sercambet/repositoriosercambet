@@ -31,19 +31,33 @@
 
 
 
-<h1> REM - PIXELES</h1>
+<h1>Unidades de Medida en CSS</h1>
 
-<p class="pixeles">Los pixeles (px) en HTML permiten definir la posición absoluta de unidades que representan un solo punto en la pantalla, es un tamaño fijo que resalta sobre otros elemntos que tengan diferente o mismo valor según corresponda.</p>
+<p class="pixeles"><strong>Píxeles (px) — Medida absoluta:</strong> Un píxel representa un punto fijo en la pantalla.
+    Es la unidad más conocida y la más intuitiva para empezar. Su desventaja es que no escala automáticamente con
+    las preferencias del usuario ni con el tamaño del dispositivo. Ideal para bordes, sombras y elementos que
+    nunca deben cambiar de tamaño.</p>
 
- <div class="cajaimagen">  
-
-<p class="rem">Por otra parte, los REM son unidades relativas de medida basadas en la raiz del elemento, donde típicamente está relacionada con un tamaño genérico de pixeles, es decir 1rm= 16 pixeles (16px).
-
- 
-
+<div class="cajaimagen">
+    <p class="rem"><strong>REM (Root EM) — Medida relativa a la raíz:</strong> 1rem equivale al tamaño de fuente
+        del elemento <code>&lt;html&gt;</code>. Por defecto eso son 16px, pero si se define
+        <code>html { font-size: 62.5%; }</code>, entonces 1rem = 10px, lo que simplifica los cálculos. Es la unidad
+        recomendada para tipografía en diseños responsivos.</p>
 </div>
 
-</p>
+<p class="pixeles"><strong>EM — Medida relativa al padre:</strong> Similar al rem, pero relativa al
+    <code>font-size</code> del elemento contenedor directo, no de la raíz. Útil para componentes que deben
+    escalar en relación a su contexto. Ejemplo: si un <code>&lt;div&gt;</code> tiene <code>font-size: 20px</code>,
+    entonces <code>1em = 20px</code> dentro de ese div.</p>
+
+<p class="pixeles"><strong>Porcentaje (%) — Medida relativa al contenedor:</strong> El porcentaje calcula el tamaño
+    en relación al elemento padre. <code>width: 50%</code> significa la mitad del ancho del contenedor. Es
+    esencial para layouts fluidos y diseño responsivo.</p>
+
+<p class="pixeles"><strong>VH y VW — Medidas del viewport:</strong> <code>1vh</code> equivale al 1% de la altura
+    de la ventana del navegador, y <code>1vw</code> equivale al 1% de su ancho. Son perfectas para secciones que
+    deben ocupar toda la pantalla: <code>height: 100vh</code> hace que un elemento sea exactamente tan alto como
+    la ventana visible.</p>
 
 
 

@@ -80,10 +80,6 @@ h1{
 }
 
 
-----------------------
-
-
-
 
 .profile-pic{
     width: 70px;
@@ -125,4 +121,91 @@ h1{
 ul.menu_list{
     display: flex;
     gap: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    .img,
+    img {
+        width: 350px;
+        height: 210px;
+    }
+
+    .header {
+        padding: 30px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio {
+        padding: 20px;
+    }
+
+    .container {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .img,
+    img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .menu_list,
+    ul.menu_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img,
+    img {
+        width: 95vw;
+        height: auto;
+    }
+
+    .navbar {
+        padding: 8px;
+    }
+
+    .menu_list,
+    ul.menu_list {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: 36px;
+    }
 }

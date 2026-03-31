@@ -9,18 +9,19 @@ body{
 }
 
 .pmain{
-    padding: 20px 20px 20px 20px;
-    margin: 10px 10px 10px 10px;
-    width: 500px;
-    height: 120px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
     border: 3px solid black;
     border-radius: 20px;
     text-align: justify;
-    display: flex;  
+    display: flex;
     justify-content: center;
-    margin-left: 700px;
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 15px;
 }
 
 html{
@@ -44,9 +45,9 @@ header > nav{
     background-color: #4F9E42;
     padding: 20px;
     font-size: 20px;
-    font-style: none;
-    font-display: none;
-    height: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
 
 /* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
 
@@ -57,11 +58,11 @@ h1{
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 0;
     font-size: 30px;
     margin-top: 10px;
 /* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-    
+
 }
 
 body{
@@ -156,3 +157,101 @@ con el titulo de la pagina */
 }
 
 /* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    header > nav {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .pmain {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header > nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .menu_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .libro {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pmain {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .headermenu {
+        height: auto;
+    }
+
+    footer {
+        font-size: 1.4rem;
+        height: auto;
+        padding: 15px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > nav {
+        padding: 10px 8px;
+    }
+
+    .menu_list {
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .pmain {
+        width: 95%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

@@ -15,9 +15,9 @@ header > nav{
     background-color: #4F9E42;
     padding: 20px;
     font-size: 20px;
-    font-style: none;
-    font-display: none;
-    height: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
 
 /* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
 
@@ -26,11 +26,11 @@ header > nav{
 h1{
     text-align: center;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 0;
     font-size: 30px;
     margin-top: 10px;
 /* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-    
+
 }
 
 body{
@@ -150,7 +150,8 @@ section{
 footer{
     display: flex;
     justify-content: center;
-    height: 28px;
+    height: auto;
+    padding: 15px 20px;
 }
 
 /* Necesario para que el texto se viera centrado en el footer */
@@ -182,28 +183,30 @@ body{
 
 .pixeles{
     background-color: #C1F6D4;
-    border: 2px solid black;
-    padding: 20px 100px;
-    margin: 10px 100px;
-    margin-left: 300px;
-    width: 1000px;
     border: 5px solid black;
+    padding: 20px 30px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1000px;
     border-radius: 20px;
     text-align: center;
-    font-size:30px;
-    
+    font-size: 24px;
+    line-height: 1.6;
+
 }
 
 .rem{
     display: flex;
     justify-content: center;
     background-color: #C1F6D4;
-    padding: 20px 100px;
-    margin: 10px 100px;
-    width: 1000px;
+    padding: 20px 40px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1000px;
     text-align: justify;
-    height: 200px;
-    font-size: 30px;
+    height: auto;
+    font-size: 24px;
+    line-height: 1.6;
 
 }
 
@@ -219,9 +222,9 @@ header > nav{
     background-color: #4F9E42;
     padding: 20px;
     font-size: 20px;
-    font-style: none;
-    font-display: none;
-    height: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 
@@ -261,12 +264,148 @@ a{
 
 .cajaimagen{
     display:flex;
-    border: 5px solid black ;
+    border: 5px solid black;
     border-radius: 20px;
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     justify-content: center;
-    align-items: baseline;
-    height: 250px;
-    margin-left: 300px;
+    align-items: center;
+    height: auto;
+    min-height: 150px;
+    margin: 10px auto;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    header > nav {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .pixeles,
+    .rem {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cajaimagen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header > nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .menu_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .libro {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pixeles,
+    .rem {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 20px;
+        font-size: 20px;
+        height: auto;
+    }
+
+    .cajaimagen {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .ejemplo {
+        width: 90%;
+        height: auto;
+    }
+
+    .headermenu {
+        height: auto;
+    }
+
+    footer {
+        font-size: 1.4rem;
+        height: auto;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    p {
+        background-color: red;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > nav {
+        padding: 10px 8px;
+    }
+
+    .menu_list {
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .pixeles,
+    .rem {
+        width: 95%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .cajaimagen {
+        width: 95%;
+    }
+
+    a {
+        font-size: 14px;
+    }
 }

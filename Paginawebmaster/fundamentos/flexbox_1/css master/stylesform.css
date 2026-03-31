@@ -10,16 +10,18 @@ body{
 
 .formulario{
 
-    height: 800px;
-    width: 1400px;
+    height: auto;
+    width: 90%;
+    max-width: 900px;
     margin: 50px auto;
     background-color: purple;
-    padding: 70px;
+    padding: 40px 50px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font: 28px Helvetica, sans-serif;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
     border: #ccc solid 3px;
-    line-height: 1.5;
+    line-height: 1.6;
     box-shadow: #4CAF50 0px 5px 1px;
 
 }
@@ -47,15 +49,16 @@ label{
 .submit{
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 14px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    height: 80px;
+    height: auto;
     width: 100%;
     text-align:center;
-    font: 40px Helvetica, sans-serif;
-    
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+
 }
 
 
@@ -76,7 +79,8 @@ h1{
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-    font: 28px Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
     color: aliceblue;
 }
 
@@ -85,8 +89,6 @@ h1{
     width: 100%;
 
 }
-
-------------
 
 
 
@@ -137,6 +139,95 @@ ul.menu_list{
 
 a{
     background-color: aqua;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    .formulario {
+        width: 90%;
+        height: auto;
+        padding: 50px;
+        margin: 30px auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    ul.menu_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .submit {
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .select {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .age {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    ul.menu_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 98%;
+        padding: 20px 12px;
+        font-size: 16px;
+    }
+
+    .submit {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
 }
 
 
