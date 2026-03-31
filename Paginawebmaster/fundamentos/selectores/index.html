@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectores</title>
+    <title>Selectores CSS</title>
 </head>
-
 <body>
-
 
     <header>
         <nav class="headermenu">
@@ -17,96 +14,81 @@
                 <img class="libro" src="./bookmine-removebg-preview.png" alt="librologo">
                 <span class="logo">Codigocraft.com</span>
             </div>
-
             <ul class="menu_list">
                 <li><a class="enlaceheader" href="/index.html">Inicio</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/box_model/index.html">Box Model</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/flexbox_2/index.html">Flexbox</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/medidas/index.html">Medidas</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a>
-                </li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a>
-                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a>
-                </li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a></li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a></li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a></li>
+                <li><a class="btn-sesion" href="/Paginawebmaster/paginaclon/index.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="contenido">
+
         <h1 class="maintitle">Selectores CSS</h1>
 
-    <div class="estilo">
-        <p>Un <strong>selector CSS</strong> es la parte de una regla que indica <em>a qué elemento HTML se le
-            aplicará el estilo</em>. Sin selectores, no hay forma de decirle al navegador qué parte de la página
-            debe cambiar de color, tamaño o posición.</p>
-        <p>Los tres tipos fundamentales son:</p>
-        <ul>
-            <li><strong>Selector de etiqueta:</strong> apunta a todas las etiquetas de ese tipo. Ej: <code>p { color: red; }</code> afecta todos los párrafos.</li>
-            <li><strong>Selector de clase (<code>.nombre</code>):</strong> apunta a elementos con ese atributo <code>class</code>. Es el más usado en proyectos reales.</li>
-            <li><strong>Selector de ID (<code>#nombre</code>):</strong> apunta a un único elemento con ese <code>id</code>. Se usa para elementos únicos en la página.</li>
-        </ul>
-        <p>En los ejemplos a continuación, cada tarjeta de receta tiene una clase diferente
-            (<code>.card_brasil</code>, <code>.card_argentino</code>, <code>.card_sarten</code>), lo que permite
-            aplicarle un color de fondo distinto a cada una sin tocar las demás. Así funcionan los selectores de
-            clase en la práctica.</p>
+        <div class="intro">
+            <p class="intro-texto">Un <strong>selector CSS</strong> es la parte de una regla que indica <em>a qué elemento HTML se le
+                aplicará el estilo</em>. Sin selectores, no hay forma de decirle al navegador qué parte de la página
+                debe cambiar de color, tamaño o posición.</p>
+            <ul class="intro-lista">
+                <li><strong>Etiqueta:</strong> apunta a todas las etiquetas de ese tipo. Ej: <code>p { color: red; }</code></li>
+                <li><strong>Clase (<code>.nombre</code>):</strong> apunta a elementos con ese atributo <code>class</code>. Es el más usado en proyectos reales.</li>
+                <li><strong>ID (<code>#nombre</code>):</strong> apunta a un único elemento con ese <code>id</code>. Para elementos únicos en la página.</li>
+            </ul>
+            <p class="intro-texto">Cada tarjeta tiene una clase diferente
+                (<code>.card_brasil</code>, <code>.card_argentino</code>, <code>.card_sarten</code>), lo que permite
+                aplicarle un color de fondo distinto a cada una. Así funcionan los selectores de clase en la práctica.</p>
+        </div>
+
+        <section class="container">
+
+            <div class="estilo card_brasil">
+                <h2>Carne al estilo brasileño</h2>
+                <ul>
+                    <li>2 cucharadas de sal gruesa</li>
+                    <li>1 cucharada de pimentón dulce</li>
+                    <li>2 cucharaditas de pimienta negra molida</li>
+                    <li>1 cucharadita de orégano</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>2 dientes de ajo y cebolla muy picada</li>
+                </ul>
+            </div>
+
+            <div class="estilo card_argentino">
+                <h2>Carne al estilo argentino</h2>
+                <ul>
+                    <li>2 cucharadas de sal gruesa</li>
+                    <li>1 cucharada de pimentón dulce</li>
+                    <li>2 cucharaditas de pimienta negra molida</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>Chimichurri al gusto</li>
+                    <li>Fuego lento con leña</li>
+                </ul>
+            </div>
+
+            <div class="estilo card_sarten">
+                <h2>Carne en sartén</h2>
+                <ul>
+                    <li>300 gr. de falda o carne para sopa</li>
+                    <li>½ cebolla mediana</li>
+                    <li>¼ de pimentón rojo mediano</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>½ cucharada de comino molido</li>
+                    <li>Sal y pimienta negra al gusto</li>
+                </ul>
+            </div>
+
+        </section>
+
     </div>
 
-    <section class="container">
-
-        <div class="estilo card_brasil">
-                <h2>Como asar carne al estilo brasileño</h2>
-            <ul>
-                <li>Adobar la carne con dos cucharadas de sal</li>
-                <li>1 cucharada de pimentón dulce</li>
-                <li> 2 cucharaditas de pimienta negra molida</li>
-                <li> 1 cucharadita de orégano</li>
-                <li>1 cucharadita de orégano</li>
-                <li>1 cucharadita de comino molido. </li>
-                <li>1 cucharadita de orégano</li>
-                <li>A estas aromáticas se suele añadir un par de dientes de ajo y opcionalmente, cebolla muy picada.
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="estilo card_argentino">
-
-            <h2>Como asar carne al estilo argentino</h2>
-            <ul>
-                <li>Adobar la carne con dos cucharadas de sal</li>
-                <li>1 cucharada de pimentón dulce</li>
-                <li> 2 cucharaditas de pimienta negra molida</li>
-                <li>1 cucharadita de comino molido. </li>
-            </ul>
-        </div>
-
-        <div class="estilo card_sarten">
-
-            <h2>Como asar carne en sarten</h2>
-            <ul>
-                <li>300 gr. de falda o carne para sopa (se conoce también como vacío, matambre o tapabarriga) (aprox.
-                    150
-                    gr. por persona)</li>
-                <li>½ cebolla mediana</li>
-                <li>¼ de pimentón (pimiento) rojo mediano</li>
-                <li>1 zanahoria mediana</li>
-                <li>2 cucharadas de aceite de oliva</li>
-                <li>½ cucharada de comino molido</l i>
-                <li>½ cucharada de pimentón dulce molido</li>
-                <li>½ cucharada de pimentón ahumado molido</li>
-                <li>½ taza de agua (también puedes utilizar caldo de pollo o caldo de pollo o vegetales)</li>
-                <li>sal y pimienta negra recién molida a tu gusto</li>
-        </div>
-
-
-
-    </section>
-
-    <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©
-    </footer>
-
-
+    <footer>Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</footer>
 
 </body>
-
 </html>

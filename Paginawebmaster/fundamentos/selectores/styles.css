@@ -4,368 +4,218 @@
     box-sizing: border-box;
 }
 
-.maintitle {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    color: black;
-}
-
-
-
-
-.estilo {
-    background-color: lightgray;
-    margin: 20px;
-    padding: 20px;
-    padding: 20px;
-    border: 2px solid black;
-}
-
-li {
-    list-style:circle;
-}
-
-
-.card_brasil{
-    background-color: blue;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 0;
-    padding: 15px;
-    border-radius: 10px;
-
-}
-
-.card_argentino{
-    background-color: red;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.card_sarten{
-    background-color: green;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1{
-    text-align: center;
-    color: burlywood;
-    font-size: 80px;
-    font-family: Barrio;
-    font-weight: 100;
-
-}   
-
-
-body{
-    background-color:#C1F6D4;
-}
-
-
-div{
-    display: flex;
-    margin-top: 0px;
-    justify-content: center;
-}
-
-p {
-    color: whitesmoke;
-    font-size: clamp(22px, 3vw, 40px);
-    font-family: Barrio;
-    font-weight:100;
-    font-style: italic;
-    text-align: justify;
-    text-shadow: 3px 10px 10px black;
-    line-height: 1.4;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    border: 5px solid black;
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 20px;
-    padding: 20px;
-
-    /* Aqui es donde definí los colores de la pagina web y sus respectivos estilos, como el tamaño de letra, la fuente, el peso de la letra, el estilo de la letra, la alineación del texto y el margen. */
-
-}
-
-h2{
-    text-align: center;
-    color: burlywood;
-    font-size: 50px;
-    font-family: Barrio;
-    font-weight: 100;
-    text-shadow: 0px 5px 10px black;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-html{
+html {
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
 }
 
-
-
-html{
-    font-size: 62.5%;
-    font-family: Helvetica, sans-serif;
- /* Configuración tamaño + tipo de letra en index.html */
-}
-
-
-
-header > nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #4F9E42;
-    padding: 20px;
-    font-size: 20px;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 10px;
-
-/* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
-
-}
-
-h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    font-size: 30px;
-    margin-top: 20px;
-/* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-
-}
-
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #C1F6D4;
-/* Seteo de body y su tamaño para empatar con el footer utilizando min-height */
-    
-
 }
 
-.enlaceheader{
-    color: black;
-}
+/* ===== HEADER ===== */
 
-/* Clase independiente que le puse a los links del header
-para mantener el color negro en el menu, de lo contrario, 
-se vería azul como en la clase "a{". */
-
-
-a{
-    font-size: 20px;
+header > nav {
     display: flex;
-    color: rgb(8, 8, 184);
-    text-align: center;
-}
-
-/* Configuración de los enlaces de la caja del menú */
-
-
-
-
-footer{
-    display: flex;
-    margin-top: auto;
-    padding: 20px;
-    color: black;
-    text-align:center;
-    justify-content: center;
-    margin-top:auto; 
-    font-size:2rem;
+    justify-content: space-around;
+    align-items: center;
     background-color: #4F9E42;
-
+    padding: 16px 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Ajustes de footer para empatar estéticamente con el header */
+.headermenu { height: auto; }
 
-.menu_list{
+.menu_list {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-/* Espacio entre enlaces del menú */
+.enlaceheader {
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+}
 
-.logo{
+a {
+    font-size: 18px;
+    color: black;
+}
+
+.libro { height: 60px; }
+
+.logo {
     font-family: Helvetica, sans-serif;
-    font-size: 30px; 
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+.contenido {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 3px;
-    margin: 20px;
-    justify-content: center;
-    
+    gap: 16px;
+    padding: 16px 24px;
 }
 
-/* ConfiguraciÓn del titulo de la pagina */
-
-.libro{
-    display:flex;
-    align-items: end;
-    justify-content: center;
-    height: 80px;
-
+h1.maintitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-/* ConfiguraciÓn del logo que es un librito */
+/* ===== INTRO ===== */
 
-div{
+.intro {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1300px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 18px 24px;
+}
+
+.intro-texto {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    color: black;
+}
+
+.intro-lista {
+    list-style: circle;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.intro-lista li {
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* ===== TARJETAS DE RECETAS (3 en fila) ===== */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.estilo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 16px;
+}
+
+.estilo h2 {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+
+.estilo ul {
+    list-style: circle;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.estilo ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Colores por selector de clase — esto es lo que demuestra la página */
+.card_brasil   { background-color: #1a56db; }
+.card_argentino { background-color: #c81e1e; }
+.card_sarten   { background-color: #057a55; }
+
+/* ===== FOOTER ===== */
+
+footer {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 16px 20px;
+    font-size: 1.8rem;
+    background-color: #4F9E42;
+    color: black;
+    text-align: center;
 }
-
-/* Div muy generico, pero me sirivÓ para alinear el logo
-con el titulo de la pagina */
-
-.headermenu{
-    height: 150px;
-}
-
-/* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
 
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 1024px) {
-    header > nav {
-        height: auto;
-        padding: 15px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    h1 {
-        font-size: 44px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
+    header > nav { padding: 15px; gap: 10px; }
+    .intro-texto, .intro-lista li, .estilo ul li { font-size: 14px; }
+    .estilo h2 { font-size: 16px; }
 }
 
 @media (max-width: 768px) {
-    header > nav {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 10px;
-        gap: 10px;
-    }
+    header > nav { flex-direction: column; padding: 12px 10px; gap: 10px; }
+    .menu_list { flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .logo { font-size: 22px; margin: 10px; }
+    .libro { height: 50px; }
+    h1.maintitle { font-size: 24px; }
+    footer { font-size: 1.4rem; }
+    a { font-size: 16px; }
 
-    .menu_list {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .logo {
-        font-size: 22px;
-        height: auto;
-        margin: 10px;
-    }
-
-    .libro {
-        height: 60px;
-    }
-
-    h1 {
-        font-size: 36px;
-        margin-left: 0;
-        margin-top: 15px;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
-
-    .estilo {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .maintitle {
-        font-size: 24px;
-    }
-
-    .headermenu {
-        height: auto;
-    }
-
-    footer {
-        font-size: 1.4rem;
-        height: auto;
-    }
-
-    a {
-        font-size: 16px;
-    }
+    .container { grid-template-columns: 1fr; }
+    .intro-texto, .intro-lista li, .estilo ul li { font-size: 15px; }
 }
 
 @media (max-width: 480px) {
-    header > nav {
-        padding: 10px 8px;
-    }
+    header > nav { padding: 10px 8px; }
+    .menu_list { gap: 8px; }
+    h1.maintitle { font-size: 20px; }
+    a { font-size: 14px; }
+}
 
-    .menu_list {
-        gap: 8px;
-    }
+.btn-sesion {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-
-    a {
-        font-size: 14px;
-    }
+.btn-sesion:hover {
+    background-color: black;
+    color: white;
 }

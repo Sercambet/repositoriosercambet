@@ -1,335 +1,246 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-.formulario{
-
-    height: auto;
-    width: 90%;
-    max-width: 900px;
-    margin: 50px auto;
-    background-color: #C1F6D4;
-    padding: 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    border: black solid 3px;
-    line-height: 1.6;
-    box-shadow: #4CAF50 0px 5px 1px;
-
-}
-
-input{
-    
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid black;
-    border-radius: 4px;
-    width: 100%;
-    box-shadow:#4CAF50 0px 5px 1px;
-}
-
-label{
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-}
-
-
-.submit{
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 70%;
-    text-align:center;
-    display: block;
-    margin: 20px auto 0;
-    font-size: 22px;
-    font-family: Helvetica, sans-serif;
-
-}
-
-
-h1{
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.age{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.select{
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
-    width: 100%;
-    height: auto;
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    color: black;
-}
-
-.input.submit{
-    margin: 150 auto;
-    width: 100%;
-
-}
-
-
-html{
+html {
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
-    min-height: 100vh;
- /* Configuración tamaño + tipo de letra en index.html */
 }
 
-
-
-header > nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #4F9E42;
-    padding: 20px;
-    font-size: 20px;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 10px;
-
-/* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
-
-}
-
-h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    font-size: 28px;
-    margin-top: 10px;
-/* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-
-}
-
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #C1F6D4;
-/* Seteo de body y su tamaño para empatar con el footer utilizando min-height */
-    
-
 }
 
-.enlaceheader{
-    color: black;
-}
+/* ===== HEADER ===== */
 
-/* Clase independiente que le puse a los links del header
-para mantener el color negro en el menu, de lo contrario, 
-se vería azul como en la clase "a{". */
-
-
-a{
-    font-size: 20px;
+header > nav {
     display: flex;
-    color: rgb(8, 8, 184);
-    text-align: center;
-}
-
-/* Configuración de los enlaces de la caja del menú */
-
-
-
-
-footer{
-    display: flex;
-    margin-top: auto;
-    padding: 20px;
-    color: black;
-    text-align:center;
-    margin-top:auto; 
-    font-size:2rem;
+    justify-content: space-around;
+    align-items: center;
     background-color: #4F9E42;
-
+    padding: 16px 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Ajustes de footer para empatar estéticamente con el header */
+.headermenu { height: auto; }
 
-.menu_list{
+.menu_list {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-/* Espacio entre enlaces del menú */
-
-.logo{
-    font-family: Helvetica, sans-serif;
-    font-size: 30px; 
-    display: flex;
-    align-items: center;
-    height: 3px;
-    margin: 20px;
-    justify-content: center;
-    
-}
-
-/* ConfiguraciÓn del titulo de la pagina */
-
-.libro{
-    display:flex;
-    align-items: end;
-    justify-content: center;
-    height: 80px;
-
-}
-
-/* ConfiguraciÓn del logo que es un librito */
-
-div{
-    display: flex;
-    align-items: center;
-}
-
-/* Div muy generico, pero me sirivÓ para alinear el logo
-con el titulo de la pagina */
-
-.headermenu{
-    height: 150px;
-}
-
-/* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
-
-main{
-    display: flex;
-    justify-content: start;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: justify;
-}
-
-/* Por inercia lo utilice para cuadrar las cajas */
-
-p{
-    font-family: Helvetica;
+.enlaceheader {
+    color: black;
     font-size: 18px;
-    display: flex;
+    text-decoration: underline;
 }
 
-/* Aqui aseguré que el texto se viera uniforme */
-
-section{
-    display: flex;
+a {
+    font-size: 18px;
+    color: black;
 }
 
-/* Por si las moscas */
+.libro { height: 60px; }
 
-footer{
+.logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== CONTENIDO ===== */
+
+.contenido {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
 }
 
-/* Necesario para que el texto se viera centrado en el footer */
+/* ===== FORMULARIO ===== */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 560px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 4px;
+}
+
+/* ===== CAMPOS ===== */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #555;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    background-color: #f9fafb;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4F9E42;
+    box-shadow: 0 0 0 3px rgba(79, 158, 66, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* ===== CHECKBOX ===== */
+
+.campo-check {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo-check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.campo-check label {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ===== BOTÓN ENVIAR ===== */
+
+.submit {
+    background-color: #4F9E42;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 4px;
+}
+
+.submit:hover {
+    background-color: #3d7d33;
+}
+
+.submit:active {
+    transform: scale(0.98);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    font-size: 1.8rem;
+    background-color: #4F9E42;
+    color: black;
+    text-align: center;
+}
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 1024px) {
-    .formulario {
-        width: 85%;
-        padding: 25px;
-    }
-
-    .submit {
-        width: 80%;
-    }
-}
-
 @media (max-width: 768px) {
-    header > nav {
-        flex-direction: column;
-        padding: 15px 10px;
-    }
+    header > nav { flex-direction: column; padding: 12px 10px; gap: 10px; }
+    .menu_list { flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .logo { font-size: 22px; margin: 10px; }
+    .libro { height: 50px; }
+    footer { font-size: 1.4rem; }
+    a { font-size: 16px; }
 
-    .menu_list {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .formulario {
-        width: 92%;
-        padding: 20px 15px;
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    .submit {
-        width: 90%;
-        font-size: 18px;
-        padding: 12px;
-    }
-
-    .select {
-        font-size: 16px;
-    }
-
-    footer {
-        font-size: 1.4rem;
-        height: auto;
-        padding: 15px;
-    }
-
-    a {
-        font-size: 16px;
-    }
+    .formulario { padding: 24px 20px; }
+    h1 { font-size: 22px; }
 }
 
 @media (max-width: 480px) {
-    .formulario {
-        width: 96%;
-        padding: 15px 12px;
-        font-size: 14px;
-    }
+    header > nav { padding: 10px 8px; }
+    .menu_list { gap: 8px; }
+    a { font-size: 14px; }
+    .formulario { padding: 20px 16px; }
+    h1 { font-size: 20px; }
+}
 
-    h1 {
-        font-size: 18px;
-    }
+.btn-sesion {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-    .submit {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    label {
-        font-size: 14px;
-    }
-
-    .select {
-        font-size: 14px;
-    }
-
-    .menu_list {
-        gap: 8px;
-    }
-
-    a {
-        font-size: 14px;
-    }
+.btn-sesion:hover {
+    background-color: black;
+    color: white;
 }
