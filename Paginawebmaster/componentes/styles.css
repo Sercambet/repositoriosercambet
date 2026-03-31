@@ -1,298 +1,196 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-html{
+html {
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
- /* Configuración tamaño + tipo de letra en index.html */
 }
 
-
-
-header > nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #4F9E42;
-    padding: 20px;
-    font-size: 20px;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 10px;
-
-/* Ajustes de tamaño y color para la sección <nav> que pertenece al header */
-
-}
-
-h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    font-size: 30px;
-    margin-top: 10px;
-/* Aquï configuré el titulo del sitio web, centrado, y con margenes de respeto. */
-
-}
-
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #C1F6D4;
-/* Seteo de body y su tamaño para empatar con el footer utilizando min-height */
-    
-
 }
 
-.enlaceheader{
-    color: black;
-}
+/* ===== HEADER ===== */
 
-/* Clase independiente que le puse a los links del header
-para mantener el color negro en el menu, de lo contrario, 
-se vería azul como en la clase "a{". */
-
-
-a{
-    font-size: 20px;
+header > nav {
     display: flex;
-    color: rgb(8, 8, 184);
-    text-align: center;
-}
-
-/* Configuración de los enlaces de la caja del menú */
-
-
-
-
-footer{
-    display: flex;
-    margin-top: auto;
-    padding: 20px;
-    color: black;
-    text-align:center;
-    margin-top:auto; 
-    font-size:2rem;
+    justify-content: space-around;
+    align-items: center;
     background-color: #4F9E42;
-
+    padding: 16px 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Ajustes de footer para empatar estéticamente con el header */
+.headermenu {
+    height: auto;
+}
 
-.menu_list{
+.menu_list {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-/* Espacio entre enlaces del menú */
+.enlaceheader {
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+}
 
-.logo{
+a {
+    font-size: 18px;
+    color: rgb(8, 8, 184);
+}
+
+.libro {
+    height: 60px;
+}
+
+.logomenu {
     font-family: Helvetica, sans-serif;
-    font-size: 30px; 
-    display: flex;
-    align-items: center;
-    height: 3px;
-    margin: 20px;
-    justify-content: center;
-    
+    font-size: 28px;
+    margin-left: 12px;
 }
 
-/* ConfiguraciÓn del titulo de la pagina */
+/* ===== LAYOUT PRINCIPAL ===== */
 
-.libro{
-    display:flex;
-    align-items: end;
-    justify-content: center;
-    height: 80px;
-
-}
-
-/* ConfiguraciÓn del logo que es un librito */
-
-div{
+.page-content {
+    flex: 1;
     display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 20px 32px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     align-items: center;
 }
 
-/* Div muy generico, pero me sirivÓ para alinear el logo
-con el titulo de la pagina */
+/* ===== COLUMNA IZQUIERDA ===== */
 
-.headermenu{
-    height: 150px;
+.intro-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
 }
 
-/* Me tocó utilizarlo para que el tamaño del header se viera proporcional */
-
-main{
+.titulo-logo {
     display: flex;
-    justify-content: start;
-    margin-left: 50px;
-    margin-right: 50px;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logotucarro {
+    width: 90px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.descripcion {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
     text-align: justify;
 }
 
-/* Por inercia lo utilice para cuadrar las cajas */
-
-p{
-    font-family: Helvetica;
-    font-size: 18px;
-    display: flex;
+.explicacion {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 18px 22px;
 }
 
-/* Aqui aseguré que el texto se viera uniforme */
+/* ===== COLUMNA DERECHA - GALERÍA ===== */
 
-section{
+.gallery-section {
+    flex: 1.4;
     display: flex;
-}
-
-/* Por si las moscas */
-
-footer{
-    display: flex;
-    justify-content: center;
-}
-
-/* Necesario para que el texto se viera centrado en el footer */
-
-
-
-
-.inicio{
-    background-color: #C1F6D4;
-    height: auto;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 20px;
-
 }
 
-.logotucarro{
-    width: 100px;
-    height: 50px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+.img {
     overflow: hidden;
     border-radius: 10px;
-    display: flex;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.fotomenu{
+.fotomenu {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 5s ease, box-shadow 6s ease;
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    transition: 5s;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.img:hover{
+.img:hover .fotomenu {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    object-fit: cover;
-    overflow: hidden;
-    transform: scale(1.1);
-    box-shadow: 0 0 40px rgba(237, 237, 237, 0.826);
-    filter: opacity(0.8);
-
-}
-
-
-
-h1{
-    text-align: center;
     align-items: center;
+    padding: 16px 20px;
+    font-size: 1.8rem;
+    background-color: #4F9E42;
     color: black;
-    margin-top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.logomenu{
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    img{
-        width: 50px;
-        height: 50px;
-    }
-    font-family: Helvetica, sans-serif;
-    font-size: 30px; 
-    display: flex;
-    align-items: center;
-    height: 3px;
-    margin: 20px;
-    justify-content: center;
-    
-}
-
-
-.logo{
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    img{
-        width: 50px;
-        height: 50px;
-    }
-}
-
-.header{
-    display: flex;
-    gap: 20px;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    text-align: center;
 }
 
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 1024px) {
-    header > nav {
-        height: auto;
-        padding: 15px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .inicio {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .container {
-        gap: 15px;
-        padding: 15px;
+    .page-content {
+        gap: 18px;
+        padding: 16px 20px;
     }
 
     .fotomenu {
-        width: 350px;
-        height: 210px;
+        height: 130px;
     }
 }
 
 @media (max-width: 768px) {
     header > nav {
         flex-direction: column;
-        height: auto;
-        padding: 15px 10px;
-        gap: 10px;
+        padding: 12px 10px;
     }
 
     .menu_list {
@@ -301,93 +199,41 @@ h1{
         gap: 12px;
     }
 
-    .logo,
-    .logomenu {
-        font-size: 22px;
-        height: auto;
-        margin: 10px;
+    .page-content {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+        align-items: stretch;
     }
 
-    .libro {
-        height: 60px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin-left: 0;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .inicio {
-        height: auto;
-        padding: 30px 15px;
+    .gallery-section {
+        flex: none;
     }
 
     .container {
-        gap: 12px;
-        padding: 12px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .fotomenu {
-        width: 90vw;
-        height: auto;
+        height: 140px;
     }
 
-    .logotucarro {
-        width: 70px;
-        height: auto;
-    }
-
-    .header {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .headermenu {
-        height: auto;
-    }
-
-    footer {
-        font-size: 1.4rem;
-        height: auto;
-    }
-
-    a {
-        font-size: 16px;
-    }
-
-    main {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    .descripcion { font-size: 15px; }
+    footer { font-size: 1.4rem; }
+    a { font-size: 16px; }
 }
 
 @media (max-width: 480px) {
-    header > nav {
-        padding: 10px 8px;
-    }
-
-    .menu_list {
-        gap: 8px;
-    }
-
-    h1 {
-        font-size: 18px;
+    .container {
+        grid-template-columns: 1fr;
     }
 
     .fotomenu {
-        width: 95vw;
-        height: auto;
+        height: 200px;
     }
 
-    .logo img,
-    .logomenu img {
-        width: 35px;
-        height: 35px;
-    }
-
-    a {
-        font-size: 14px;
-    }
+    h1 { font-size: 18px; }
+    a { font-size: 14px; }
 }

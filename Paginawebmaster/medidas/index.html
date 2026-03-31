@@ -3,68 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medidas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
-  <header>
+
+    <header>
         <nav class="headermenu">
             <div>
                 <img class="libro" src="./bookmine-removebg-preview.png" alt="librologo">
                 <span class="logo">Codigocraft.com</span>
             </div>
-
             <ul class="menu_list">
                 <li><a class="enlaceheader" href="/index.html">Inicio</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/box_model/index.html">Box Model</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/flexbox_2/index.html">Flexbox</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/medidas/index.html">Medidas</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a>                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a>
-                </li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a></li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a></li>
+                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="contenido">
+        <h1>Unidades de Medida en CSS</h1>
 
+        <div class="cards-grid">
+            <p class="pmain"><strong>Píxeles (px) — Medida absoluta:</strong> Un píxel representa un punto fijo en la pantalla.
+                Es la unidad más conocida y la más intuitiva para empezar. Su desventaja es que no escala automáticamente con
+                las preferencias del usuario ni con el tamaño del dispositivo. Ideal para bordes, sombras y elementos que
+                nunca deben cambiar de tamaño.</p>
 
+            <p class="pmain"><strong>REM (Root EM) — Medida relativa a la raíz:</strong> 1rem equivale al tamaño de fuente
+                del elemento <code>&lt;html&gt;</code>. Por defecto eso son 16px, pero si se define
+                <code>html { font-size: 62.5%; }</code>, entonces 1rem = 10px, lo que simplifica los cálculos. Es la unidad
+                recomendada para tipografía en diseños responsivos.</p>
 
-<h1>Unidades de Medida en CSS</h1>
+            <p class="pmain"><strong>EM — Medida relativa al padre:</strong> Similar al rem, pero relativa al
+                <code>font-size</code> del elemento contenedor directo, no de la raíz. Útil para componentes que deben
+                escalar en relación a su contexto. Ejemplo: si un <code>&lt;div&gt;</code> tiene <code>font-size: 20px</code>,
+                entonces <code>1em = 20px</code> dentro de ese div.</p>
 
-<p class="pixeles"><strong>Píxeles (px) — Medida absoluta:</strong> Un píxel representa un punto fijo en la pantalla.
-    Es la unidad más conocida y la más intuitiva para empezar. Su desventaja es que no escala automáticamente con
-    las preferencias del usuario ni con el tamaño del dispositivo. Ideal para bordes, sombras y elementos que
-    nunca deben cambiar de tamaño.</p>
+            <p class="pmain"><strong>Porcentaje (%) — Medida relativa al contenedor:</strong> El porcentaje calcula el tamaño
+                en relación al elemento padre. <code>width: 50%</code> significa la mitad del ancho del contenedor. Es
+                esencial para layouts fluidos y diseño responsivo.</p>
 
-<div class="cajaimagen">
-    <p class="rem"><strong>REM (Root EM) — Medida relativa a la raíz:</strong> 1rem equivale al tamaño de fuente
-        del elemento <code>&lt;html&gt;</code>. Por defecto eso son 16px, pero si se define
-        <code>html { font-size: 62.5%; }</code>, entonces 1rem = 10px, lo que simplifica los cálculos. Es la unidad
-        recomendada para tipografía en diseños responsivos.</p>
-</div>
+            <p class="pmain"><strong>VH y VW — Medidas del viewport:</strong> <code>1vh</code> equivale al 1% de la altura
+                de la ventana del navegador, y <code>1vw</code> equivale al 1% de su ancho. Son perfectas para secciones que
+                deben ocupar toda la pantalla: <code>height: 100vh</code> hace que un elemento sea exactamente tan alto como
+                la ventana visible.</p>
+        </div>
+    </div>
 
-<p class="pixeles"><strong>EM — Medida relativa al padre:</strong> Similar al rem, pero relativa al
-    <code>font-size</code> del elemento contenedor directo, no de la raíz. Útil para componentes que deben
-    escalar en relación a su contexto. Ejemplo: si un <code>&lt;div&gt;</code> tiene <code>font-size: 20px</code>,
-    entonces <code>1em = 20px</code> dentro de ese div.</p>
-
-<p class="pixeles"><strong>Porcentaje (%) — Medida relativa al contenedor:</strong> El porcentaje calcula el tamaño
-    en relación al elemento padre. <code>width: 50%</code> significa la mitad del ancho del contenedor. Es
-    esencial para layouts fluidos y diseño responsivo.</p>
-
-<p class="pixeles"><strong>VH y VW — Medidas del viewport:</strong> <code>1vh</code> equivale al 1% de la altura
-    de la ventana del navegador, y <code>1vw</code> equivale al 1% de su ancho. Son perfectas para secciones que
-    deben ocupar toda la pantalla: <code>height: 100vh</code> hace que un elemento sea exactamente tan alto como
-    la ventana visible.</p>
-
-
-
-
-    <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</p>
-    </footer>
-
+    <footer>Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</footer>
 
 </body>
 </html>

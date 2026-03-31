@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Componentes</title>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
- <header>
+    <header>
         <nav class="headermenu">
             <div>
                 <img class="libro" src="./bookmine-removebg-preview.png" alt="librologo">
@@ -18,58 +17,58 @@
             <ul class="menu_list">
                 <li><a class="enlaceheader" href="/index.html">Inicio</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/box_model/index.html">Box Model</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/componentes/index.html">Componentes</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/flexbox_2/index.html">Flexbox</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/medidas/index.html">Medidas</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/propiedades/index.html">Propiedades</a></li>
                 <li><a class="enlaceheader" href="/Paginawebmaster/fundamentos/selectores/index.html">Selectores</a></li>
-                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a>
+                <li><a class="enlaceheader" href="/Paginawebmaster/forms/index.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="page-content">
 
-<div class="inicio">
+        <div class="intro-section">
+            <div class="titulo-logo">
+                <div class="logo"><img class="logotucarro" src="./tucarro.png" alt="Logo Tucarro"></div>
+                <h1>Tucarro.com.co</h1>
+            </div>
 
-    <div class="header">
-        <h1>Tucarro.com.co</h1>
-        <div class="logo"><img class="logotucarro" src="./tucarro.png" alt="Logo Tucarro"></div>
+            <p class="descripcion">
+                Un <strong>componente web</strong> es una pieza reutilizable de interfaz construida con HTML y CSS.
+                A continuación ves un ejemplo real: una galería de imágenes de vehículos, similar a la que usaría
+                un portal como Tucarro. Cada tarjeta de imagen es un componente independiente con su contenedor
+                <code>.img</code>, su imagen <code>&lt;img&gt;</code> y efectos de hover aplicados por CSS.
+                Así se construyen las interfaces que ves en internet todos los días.
+            </p>
+
+            <div class="explicacion">
+                <h2>¿Cómo se construye este componente?</h2>
+                <p class="descripcion">
+                    Cada imagen está envuelta en un <code>&lt;div class="img"&gt;</code> que actúa como contenedor con
+                    <code>overflow: hidden</code> para recortar la imagen. La imagen tiene <code>object-fit: cover</code>
+                    para llenar el espacio sin deformarse. El efecto de escala al pasar el cursor usa
+                    <code>transform: scale(1.1)</code> con <code>transition</code>. El conjunto usa <strong>Flexbox</strong>
+                    con <code>flex-wrap: wrap</code> para distribuirse en filas según el ancho disponible.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <div class="container">
+                <div class="img"><img class="fotomenu" src="./snapshot.jpeg" alt="Vehículo en venta 1"></div>
+                <div class="img"><img class="fotomenu" src="./2.jpeg" alt="Vehículo en venta 2"></div>
+                <div class="img"><img class="fotomenu" src="./3.jpg" alt="Vehículo en venta 3"></div>
+                <div class="img"><img class="fotomenu" src="./4.jpg" alt="Vehículo en venta 4"></div>
+                <div class="img"><img class="fotomenu" src="./5.jpg" alt="Vehículo en venta 5"></div>
+                <div class="img"><img class="fotomenu" src="./6.jpg" alt="Vehículo en venta 6"></div>
+            </div>
+        </div>
+
     </div>
 
-    <p style="text-align:center; max-width:800px; margin: 20px auto; font-size:18px; padding: 0 20px;">
-        Un <strong>componente web</strong> es una pieza reutilizable de interfaz construida con HTML y CSS.
-        A continuación ves un ejemplo real: una galería de imágenes de vehículos, similar a la que usaría
-        un portal como Tucarro. Cada tarjeta de imagen es un componente independiente con su contenedor
-        <code>.img</code>, su imagen <code>&lt;img&gt;</code> y efectos de hover aplicados por CSS.
-        Así se construyen las interfaces que ves en internet todos los días.
-    </p>
-
-    <div class="container">
-        <div class="img"><img class="fotomenu" src="./snapshot.jpeg" alt="Vehículo en venta 1"></div>
-        <div class="img"><img class="fotomenu" src="./2.jpeg" alt="Vehículo en venta 2"></div>
-        <div class="img"><img class="fotomenu" src="./3.jpg" alt="Vehículo en venta 3"></div>
-        <div class="img"><img class="fotomenu" src="./4.jpg" alt="Vehículo en venta 4"></div>
-        <div class="img"><img class="fotomenu" src="./5.jpg" alt="Vehículo en venta 5"></div>
-        <div class="img"><img class="fotomenu" src="./6.jpg" alt="Vehículo en venta 6"></div>
-    </div>
-
-</div>
-
-<div style="max-width:800px; margin: 30px auto; padding: 20px; background-color:#fff; border: 2px solid black; border-radius: 16px;">
-    <h2 style="text-align:center; font-family:Helvetica,sans-serif; margin-bottom:12px;">¿Cómo se construye este componente?</h2>
-    <p style="font-family:Helvetica,sans-serif; font-size:17px; line-height:1.7;">
-        Cada imagen está envuelta en un <code>&lt;div class="img"&gt;</code> que actúa como contenedor con
-        <code>overflow: hidden</code> para recortar la imagen. La imagen dentro tiene <code>object-fit: cover</code>
-        para que siempre llene el espacio sin deformarse. El efecto de escala al pasar el cursor se logra con
-        <code>transform: scale(1.1)</code> combinado con <code>transition</code> en el CSS. El conjunto de tarjetas
-        usa <strong>Flexbox</strong> con <code>flex-wrap: wrap</code> para distribuirse automáticamente en filas
-        según el ancho disponible.
-    </p>
-</div>
-    
-    <footer> Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</p>
-    </footer>
-
+    <footer>Bogotá Institute of Technology (BIT) - 2026 - Todos los derechos reservados ©</footer>
 
 </body>
 </html>

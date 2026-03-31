@@ -40,11 +40,8 @@ h1{
 body{
     display: flex;
     flex-direction: column;
-
+    min-height: 100vh;
     background-color: #C1F6D4;
-/* Seteo de body y su tamaño para empatar con el footer utilizando min-height */
-    
-
 }
 
 .enlaceheader{
@@ -141,7 +138,6 @@ main{
 p{
     font-family: Helvetica;
     font-size: 18px;
-    display: flex;
 }
 
 /* Aqui aseguré que el texto se viera uniforme */
@@ -160,160 +156,75 @@ footer{
 
 
 .div1{
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    min-height: 60vh;
-    background-color:  #C1F6D4;
-    gap: 30px;
-    padding: 40px 20px;
-    /* FLEX */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background-color: #C1F6D4;
 }
 
-.div2{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 1300px;
 }
 
+/* Fila 1: 3 cajas, cada una ocupa 2 de 6 columnas */
+.cards-grid > .pemain:nth-child(-n+3) {
+    grid-column: span 2;
+}
+
+/* Fila 2: 2 cajas centradas, cada una ocupa 3 de 6 columnas */
+.cards-grid > .pemain:nth-child(n+4) {
+    grid-column: span 3;
+}
 
 .pemain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 2px solid black;
     border-radius: 10px;
-    width: 90%;
-    max-width: 1100px;
     text-align: justify;
-    margin: 0 auto;
-    padding: 20px 25px;
-    font-size: clamp(18px, 2vw, 28px);
-    line-height: 1.7;
-
+    padding: 18px 22px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 1024px) {
-    header > nav {
-        height: auto;
-        padding: 15px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .pemain {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 28px;
-    }
-
-    .div1 {
-        height: auto;
-        padding: 30px 0;
-    }
+    header > nav { padding: 15px; flex-wrap: wrap; gap: 10px; }
+    .pemain { font-size: 15px; padding: 14px 18px; }
 }
 
 @media (max-width: 768px) {
-    header > nav {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 10px;
-        gap: 10px;
-    }
+    header > nav { flex-direction: column; padding: 12px 10px; gap: 10px; }
+    .menu_list { flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .logo { font-size: 22px; height: auto; margin: 10px; }
+    .libro { height: 60px; }
+    h1 { font-size: 22px; }
+    .headermenu { height: auto; }
+    footer { font-size: 1.4rem; height: auto; }
+    a { font-size: 16px; }
 
-    .menu_list {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    /* En mobile: 1 columna */
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
-
-    .logo {
-        font-size: 22px;
-        height: auto;
-        margin: 10px;
+    .cards-grid > .pemain:nth-child(-n+3),
+    .cards-grid > .pemain:nth-child(n+4) {
+        grid-column: span 1;
     }
-
-    .libro {
-        height: 60px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .pemain {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 22px;
-        padding: 15px;
-    }
-
-    .div1 {
-        height: auto;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    main {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .headermenu {
-        height: auto;
-    }
-
-    footer {
-        font-size: 1.4rem;
-        height: auto;
-    }
-
-    a {
-        font-size: 16px;
-    }
+    .pemain { font-size: 15px; padding: 14px; }
 }
 
 @media (max-width: 480px) {
-    header > nav {
-        padding: 10px 8px;
-    }
-
-    .menu_list {
-        gap: 8px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .pemain {
-        width: 95%;
-        font-size: 18px;
-        padding: 12px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    a {
-        font-size: 14px;
-    }
+    header > nav { padding: 10px 8px; }
+    .menu_list { gap: 8px; }
+    h1 { font-size: 18px; }
+    .pemain { font-size: 14px; padding: 12px; }
+    a { font-size: 14px; }
 }
